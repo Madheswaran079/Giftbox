@@ -1,0 +1,63 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: teal;
+    animation: coloring 2s infinite ;
+}
+@keyframes coloring {
+    30% {background-color: yellow;}
+    60% {background-color: lawngreen;}
+    90% {background-color: silver;}
+}
+#heading{
+    text-align: center;
+    padding-top: 12%;
+    font-size: 4em;
+}
+#input-container{
+    text-align: center;
+    margin-top: 4%;
+}
+#textBox{
+    width: 25vw;
+    height: 5vh;
+    background-color: palevioletred;
+}
+::placeholder {
+    color: darkblue;
+    font-size: 1.5em;
+    text-align: center;
+}
+#generateButton{
+    width: 12vw;
+    height: 5vh;
+    transition-duration: 0.5s;
+    border: 3px solid green;
+    font-size: medium;
+}
+button:hover{
+    background-color: green;
+    color: black;
+}
+.myDiv{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    text-align: center;
+    height: 5vh;
+    width: 5vw;
+    margin: 10px;
+    border: 5px solid blue;
+    justify-content: center;
+    align-items: center;
+}
+#grid{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: solid red; 
+    position: absolute;
+    margin:10px;
+}
